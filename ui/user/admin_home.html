@@ -1,0 +1,22 @@
+ <h1> Mon administration de blog </h1>
+ <p> <a href = 'admin / add'> Ajouter un article </a > </p >
+ <table>
+   <thead>
+     <tr>
+       <th> Titre </th >
+       <th> Date </th >
+       <th> Auteur </th >
+       <th colspan = '2' > Actions </th> </tr>
+   </thead>
+   <tbody>
+   <repeat group = "{{@list}}" value = "{{@item}}">
+     <tr>
+       <td> {{ @ item .  titre }} </td >
+       <td> {{ @ item .  horodatage }} </td>
+       <td> {{ @ item .  auteur }} </td >
+       <td> <a href = "admin / edit / {{@ item.id}}"> Modifier </a> </td>
+       <td> <a href = "admin / delete / {{@ item.id}}"> Supprimer </a> </td>
+     </tr>
+   </repeat>
+   </tbody>
+ </table> 

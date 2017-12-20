@@ -1,0 +1,8 @@
+ <h1> Modifier </h1>
+ <form name = "blog" methode = "post" action = "{{@BASE}} {{@ PARAMS.0}}">
+   <label pour = 'title'> Titre : </label>  <br/> <input type = "texte" name = "titre" id = "titre" valeur = "{{isset (@ POST.title)? htmlspecialchars ( @ POST.title): ''}} " size = " 60 "/> <br/>
+   <label pour = 'auteur'> Auteur : </label> <br/> <input type = "texte" name = "auteur" id = "auteur" value = "{{isset (@ POST.author)? htmlspecialchars ( @ POST.author): ''}} " size = " 60 "/> <br/>
+   <label for = 'resume'> Résumé : </label > <br/> <textarea name = "resume" id = "summary" cols = "60" rows = "10"> { {isset ( @ resume POST ) ?  htmlspecialchars ( resume @ POST . ) : '' } } </textarea> <br/>
+   <label for = 'content'> Contenu : </label > <br/> <textarea name = "contenu" id = "content" cols = "60" rows = "10"> {{ isset ( @ contenu POST ) ?  htmlspecialchars (contenu @ POST) : '' }} </textarea> <br/>
+   <input type = "submit" value = "Soumettre"/>
+ </form > 

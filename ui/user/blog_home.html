@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>BeCoin</title>
+		<link rel="stylesheet" href="lib/code.css" type="text/css" />
+		<link rel="stylesheet" href="ui/css/base.css" type="text/css" />
+		<link rel="stylesheet" href="ui/css/theme.css" type="text/css" />
+	</head>
+	<body> 
+		<h1> Titres de blog </h1>
+ <repeat group = "{{@articles}}" value = "{{@item}}" >
+   <p> <a href = "voir / {{@item ['id']}}"> {{trim (@item ['titre'])}} </a> par {{ @ item [ 'auteur' ]}} </p>
+   <p> {{ @ item [ 'résumé' ]}} </p>
+ </repeat> 
+	</body>
+</html>
+
